@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speed Counting</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <form>
+                First number: <input type="number" id="firstNumber" onfocusout="giveLastNumber(); updateFirstCount()"><br>
+                Increment: <input type="number" id="increment" onfocusout="giveLastNumber()"><br>
+                Number count: <input type="number" id="numberCount" onfocusout="giveLastNumber()">
+                (last number: <span id="lastNumber"></span>)<br>
+            </form>
+
+            <div id="countingArea">
+                <input id="count"><input type="checkbox" id="clear">No clear<br>
+                next count: <span id="nextCount"></span><br>
+                <span id="countTime"></span><br>
+                <span id="finalTime"></span>
+            </div>
+
+            <div id="stats">
+                <span id="minTime">min: </span> <span id="maxTime">max: </span> <span id="medianTime">median: </span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

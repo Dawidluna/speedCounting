@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffab45;
+    font-family: Calibri;
+}
+
+#main {
+    width: 500px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding: 50px;
+    color: white;
+    background-color: #e68e25;
+    font-size: 18px;
+}
+
+#firstNumber {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#increment, #numberCount {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+#countingArea {
+    height: 110px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+input {
+    background-color: #ffdcb0;
+    border: 1px solid #3d301e;
+}
+
+#count {
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+    margin-left: 85px;
+}
+
+#clear {
+    margin-left: 15px;
+}
+
+#finalTime {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
