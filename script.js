@@ -59,10 +59,10 @@ input.addEventListener("keydown", function(event) {
                 var countTime = Math.round(performance.now()-timeSum);
                 timeSum+=countTime;
                 times.push(countTime);
-                document.getElementById("countTime").textContent = countTime+"ms";
-                document.getElementById("minTime").textContent = "min: " + Math.min(...times);
-                document.getElementById("maxTime").textContent = "max: " + Math.max(...times);
-                document.getElementById("medianTime").textContent = "median: " + median(times);
+                document.getElementById("countTime").textContent = countTime+" ms";
+                document.getElementById("minTime").textContent = "min: " + Math.min(...times) + " ms";
+                document.getElementById("maxTime").textContent = "max: " + Math.max(...times) + " ms";
+                document.getElementById("medianTime").textContent = "median: " + median(times) + " ms";
             }
             if(currentCount == lastCount) {
                 runEnd();
