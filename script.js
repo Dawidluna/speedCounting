@@ -9,6 +9,23 @@ var timeSum;
 function giveLastNumber() {
     lastCount=Number(document.getElementById("firstNumber").value)+((Number(document.getElementById("numberCount").value)-1)*Number(document.getElementById("increment").value));
     document.getElementById("lastNumber").textContent=lastCount;
+
+    if(document.getElementById("numberCount").value<=1) {
+        document.getElementById("count").value="Number count must be greater than 1!";
+        document.getElementById("count").style.color="red";
+        document.getElementById("count").style.fontSize="14px";
+        document.getElementById("count").disabled = true;
+    } else if(document.getElementById("numberCount").value%1!=0) {
+        document.getElementById("count").value="Number count must be an integer!";
+        document.getElementById("count").style.color="red";
+        document.getElementById("count").style.fontSize="14px";
+        document.getElementById("count").disabled = true;
+    } else {
+        document.getElementById("count").value="";
+        document.getElementById("count").style.color="black";
+        document.getElementById("count").style.fontSize="20px";
+        document.getElementById("count").disabled = false;
+    }
 }
 
 function updateFirstCount() {

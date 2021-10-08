@@ -41,6 +41,7 @@ input {
 
 #count {
     text-align: center;
+    width: 250px;
     height: 20px;
     font-size: 20px;
     margin-left: 85px;
