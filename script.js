@@ -60,6 +60,13 @@ input.addEventListener("keydown", function(event) {
                 timeSum+=countTime;
                 times.push(countTime);
                 document.getElementById("countTime").textContent = countTime+" ms";
+                if(countTime > 800){
+                	document.getElementById("countTime").style.color = "red";
+                }else if(countTime < 300){
+                	document.getElementById("countTime").style.color = "green";
+                }else{
+                	document.getElementById("countTime").style.color = "white";
+                }
                 document.getElementById("minTime").textContent = "min: " + Math.min(...times) + " ms";
                 document.getElementById("maxTime").textContent = "max: " + Math.max(...times) + " ms";
                 document.getElementById("medianTime").textContent = "median: " + median(times) + " ms";
