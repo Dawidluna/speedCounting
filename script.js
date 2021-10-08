@@ -100,3 +100,14 @@ input.addEventListener("keydown", function(event) {
         }
     }
 });
+
+input.addEventListener("keydown", function(event) {
+    if(event.key === 'Escape') {
+        runEnd();
+        document.getElementById("countTime").textContent="";
+        document.getElementById("finalTime").textContent="";
+        document.getElementById("minTime").textContent="min:";
+        document.getElementById("maxTime").textContent="max:";
+        document.getElementById("medianTime").textContent="median:";
+    }
+});
